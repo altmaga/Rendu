@@ -1,0 +1,29 @@
+.complet{
+  height: 10px;
+  width: 10px;
+  background-color: darkgreen;
+}
+
+.plus_moitie{
+  height: 10px;
+  width: 10px;
+  background-color: green;
+}
+
+.moins_moitie{
+  height: 10px;
+  width: 10px;
+  background-color: yellow;
+}
+
+.vide{
+  height: 10px;
+  width: 10px;
+  background-color: red;
+}
+
+ul.listes_stations li{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

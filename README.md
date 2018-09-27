@@ -1,6 +1,6 @@
 # Rendu
 
-## Pour le 3 Octobre 
+## Pour le 3 Octobre
 
 Afficher la liste des stations biclo :
 - nom + places libres + nombres de vélos
