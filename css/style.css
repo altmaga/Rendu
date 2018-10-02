@@ -1,3 +1,44 @@
+/* GENERALE */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* clearfix */
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header,
+main{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+header div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #e06517;
+}
+
+/* MAIN */
+
+h2{
+  color: #e06517;
+  font-size: 14px;
+}
+
 .complet{
   height: 15px;
   width: 15px;
@@ -24,17 +65,26 @@
 
 ul.listes_stations{
   list-style: none;
+  padding: 0;
+  margin: 0;
+  float: left;
 }
 
 ul.listes_stations li{
   display: flex;
   align-items: center;
+  padding: 5px 0;
 }
 
 ul.listes_stations li span{
-  width:550px;
+  width:500px;
 }
 
 ul.listes_stations li div{
   margin-left: 30px;
+  border-radius: 50%;
+}
+
+div#map{
+  float: right;
 }

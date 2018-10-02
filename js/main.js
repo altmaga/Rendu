@@ -1,4 +1,5 @@
-// Ajouter les stations sur  
+// Librairie OpenLayers
+// On centre la map sur Nantes
 var map;
 var mapLat = 47.216694;
 var mapLng = -1.553809;
@@ -14,6 +15,7 @@ function initialize_map() {
  	});
  }
 
+// Fonction point sur la map
  function add_map_point(lat, lng) {
  	var vectorLayer = new ol.layer.Vector({source:new ol.source.Vector({
 																						features: [new ol.Feature({
@@ -28,10 +30,10 @@ function initialize_map() {
  																																	})
  																																})
  																				});
-
+	// on affiche la map
 	map.addLayer(vectorLayer);
 }
-
+// on lance la fonction
 initialize_map();
 
 fetch('http://api.citybik.es/v2/networks/bicloo').then(function(res) {
@@ -48,7 +50,7 @@ fetch('http://api.citybik.es/v2/networks/bicloo').then(function(res) {
 			// ajout li pour chaque station : nom  + places libres + nb velos
     	var currentLi = document.createElement('li');
 			var currentSpan = document.createElement('span');
-      var detailStation = stations[i].name + ' Places libres : ' + stations[i].empty_slots + ' Vélos disponibles : ' + stations[i].free_bikes;
+      var detailStation = stations[i].name + ' Vélos disponibles : ' + stations[i].free_bikes;
       currentSpan.textContent = detailStation;
 			currentLi.appendChild(currentSpan);
       listeStations.appendChild(currentLi);
@@ -71,7 +73,7 @@ fetch('http://api.citybik.es/v2/networks/bicloo').then(function(res) {
 				newClassPlus.value = "plus_moitie";
 				currentDiv.setAttributeNode(newClassPlus);
 			}
-			else if (stations[i].free_bikes < total_velo / 2){
+			else if (stations[i].free_bikes < total_velo / 2 && stations[i].empty_slots !== total_velo){
 				//console.log('moins de la moitie');
 				var newClassMoins = document.createAttribute("class");
 				newClassMoins.value = "moins_moitie";
