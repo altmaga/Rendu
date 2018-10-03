@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Bicloo Nantes</title>
-    <link rel="icon" type="image/png" href="img/logo-bicloo.png" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header>
-      <div>
-        <h1>Stations de vélos à Nantes</h1>
-        <img src="img/logo-bicloo.png" alt="Logo Bicloo">
-      </div>
-    </header>
-    <main>
-      <h2>Retrouver toutes les informations sur les vélos à Nantes</h2>
-        <section>
-          <ul class="legende">
-            <li>Tous les vélos sont libres <div class="complet"></div></li>
-            <li>Plus de la moitié des vélos sont libres <div class="plus_moitie"></div></li>
-            <li>Moins de la moitié des vélos sont libres <div class="moins_moitie"></div></li>
-            <li>Tous les vélos sont pris <div class="vide"></div></li>
-          </ul>
-        </section>
-        <section class="clearfix">
-          <ul class="listes_stations"></ul>
-          <div id="map" style="width: 500px; height: 500px;"></div>
-        </section>
-    </main>
-  </body>
-  <footer>
-    <script src="https://openlayers.org/en/v4.6.5/build/ol.js" type="text/javascript"></script>
-    <script src="js/main.js" charset="utf-8"></script>
-  </footer>
+
+<head>
+  <meta charset="utf-8">
+  <title>Bicloo Nantes</title>
+  <link rel="icon" type="image/png" href="img/logo-bicloo.png" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>Stations de vélos à Nantes</h1>
+      <img src="img/logo-bicloo.png" alt="Logo Bicloo">
+    </div>
+  </header>
+  <main>
+    <h2>Retrouver toutes les informations sur les vélos à Nantes</h2>
+    <section>
+      <ul class="legende">
+        <li>Tous les vélos sont libres <div class="complet"></div>
+        </li>
+        <li>Plus de la moitié des vélos sont libres <div class="plus_moitie"></div>
+        </li>
+        <li>Moins de la moitié des vélos sont libres <div class="moins_moitie"></div>
+        </li>
+        <li>Tous les vélos sont pris <div class="vide"></div>
+        </li>
+      </ul>
+    </section>
+    <section class="clearfix">
+      <ul class="listes_stations"></ul>
+      <div id="map" style="width: 500px; height: 500px;"></div>
+    </section>
+  </main>
+</body>
+<footer>
+  <script src="https://openlayers.org/en/v4.6.5/build/ol.js" type="text/javascript"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+</footer>
+
 </html>
