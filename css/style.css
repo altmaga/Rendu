@@ -23,6 +23,12 @@ main{
   margin: 0 auto;
 }
 
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* HEADER */
 
 header div{
@@ -39,10 +45,11 @@ h2{
   font-size: 14px;
 }
 
+/** code couleurs **/
 .complet{
   height: 15px;
   width: 15px;
-  background-color: darkgreen;
+  background-color: blue;
 }
 
 .plus_moitie{
@@ -63,10 +70,29 @@ h2{
   background-color: red;
 }
 
-ul.listes_stations{
-  list-style: none;
+/** dispositions **/
+
+section{
+  margin-top: 30px;
+}
+
+ul.legende{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+ul.legende li{
+  display: inherit;
+  padding: 0 10px;
+}
+
+ul.legende li:first-child{
   padding: 0;
-  margin: 0;
+}
+
+ul.listes_stations{
   float: left;
 }
 
@@ -80,6 +106,7 @@ ul.listes_stations li span{
   width:500px;
 }
 
+ul.legende li div,
 ul.listes_stations li div{
   margin-left: 30px;
   border-radius: 50%;
