@@ -2,29 +2,28 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
 
 header,
-main{
+main {
   width: 1200px;
   margin: 0 auto;
 }
 
-ul{
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 /* HEADER */
-
-header div{
+header div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,77 +31,75 @@ header div{
 }
 
 /* MAIN */
-
-h2{
+h2 {
   color: #e06517;
   font-size: 14px;
 }
 
 /** code couleurs **/
-.complet{
+.complet {
   height: 15px;
   width: 15px;
   background-color: blue;
 }
 
-.plus_moitie{
+.plus_moitie {
   height: 15px;
   width: 15px;
   background-color: green;
 }
 
-.moins_moitie{
+.moins_moitie {
   height: 15px;
   width: 15px;
   background-color: yellow;
 }
 
-.vide{
+.vide {
   height: 15px;
   width: 15px;
   background-color: red;
 }
 
 /** dispositions **/
-
-section{
+section {
   margin-top: 30px;
 }
 
-section.content{
+section.content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-ul.legende{
+ul.legende {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
 }
 
-ul.legende li{
+ul.legende li {
   display: inherit;
   padding: 0 10px;
 }
 
-ul.legende li:first-child{
+ul.legende li:first-child {
   padding: 0;
 }
 
-ul.listes_stations li{
+ul.listes_stations li {
   display: flex;
   align-items: center;
   padding: 5px 0;
 }
 
-ul.listes_stations li span{
-  width:500px;
+ul.listes_stations li span {
+  width: 500px;
 }
 
 ul.legende li div,
-ul.listes_stations li div{
+ul.listes_stations li div {
   margin-left: 30px;
   border-radius: 50%;
 }
